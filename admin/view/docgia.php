@@ -11,11 +11,11 @@ $dchi = $htmlspecialchars($row['dchi']);
 $tell = $htmlspecialchars($row['tel']);
 
 ?>
-<div class="mt-5 pb-5">
-    <table class="table table-bordered">
-        <label class="mb-3 justify-content-center" for=""><b> Thông tin user</b></label>
+<div class="mt-5 pb-5 container">
+    <table class="table table-bordered table-striped caption-top">
+        <caption class="mb-3 justify-content-center fw-bold fs-5" for="">Thông tin user</caption>
         <thead>
-            <tr>
+            <tr class="table-primary">
                 <th scope="col">Họ tên</th>
                 <th scope="col">Địa chỉ</th>
                 <th scope="col">Số điện thoại</th>
@@ -39,7 +39,7 @@ $tell = $htmlspecialchars($row['tel']);
     </table>
 </div>
 
-<div class="mt-5 pb-5">
+<div class="mt-5 pb-5 container">
     <?php
 
     try {
@@ -55,10 +55,10 @@ $tell = $htmlspecialchars($row['tel']);
             echo '<p>không có mượn sách</p>';
         } else {
             echo '            
-                    <table class="table table-bordered">
-                    <label class="mb-3 justify-content-center" for=""><b> Thông tin mượn sách</b></label>
+                    <table class="table table-bordered table-hover caption-top">
+                    <caption class="mb-3 fs-5 fw-bold" for="">Thông tin mượn sách</caption>
                     <thead>
-                      <tr>
+                      <tr class="table-dark">
                         <th scope="col">Tác Phẩm</th>
                         <th scope="col">Tác Giả</th>
                         <th scope="col">Nhà xuất bản</th>
@@ -93,7 +93,7 @@ $tell = $htmlspecialchars($row['tel']);
                 if ($tra == NULL) {
                     echo '<th><form method="post">
                       <input type="hidden" name="ns" value =' . $_GET['ND'] . '>
-                      <input type="submit" name="" value="NHẮC NHỞ"></form></th>';
+                      <input type="submit" name="" class="btn btn-warning" value="NHẮC NHỞ"></form></th>';
                 } else {
                     echo '<th>' . $tra . '</th>';
                 }

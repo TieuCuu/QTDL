@@ -7,13 +7,13 @@ $query = 'SELECT tua, tacgia, sach.nxb, sach.ns
             and sach.NT = ' . $_GET['NT'] . '
             ';
 ?>
-<div class="mt-5 pb-5">
-    <table class="table table-bordered">
-        <label for="">
-            <h1>Thông tin tác phẩm</h1>
-        </label>
+<div class="mt-5 pb-5 container">
+    <table class="table table-bordered table-striped caption-top">
+        <caption class="mb-3 justify-content-center  fw-bold fs-5">
+            Thông tin tác phẩm
+        </caption>
         <thead>
-            <tr>
+            <tr class="table-primary">
                 <th scope="col">Tác Phẩm</th>
                 <th scope="col">Tác Giả</th>
                 <th scope="col">Nhà xuất bản</th>
@@ -78,13 +78,13 @@ $muon = 'SELECT ten, ho,muon.ND, ngaymuon, hantra, ngaytra
    and muon.ND = docgia.ND AND sach.NT = ' . $_GET['NT'] . '';
 ?>
 
-<div class="mt-5 pb-5">
-    <table class="table table-bordered">
-        <label for="">
-            <h1>Thông tin mượn sách </h1>
-        </label>
+<div class="mt-5 pb-5 container">
+    <table class="table table-bordered table-hover caption-top">
+        <caption class="mb-3 fs-5 fw-bold">
+            Thông tin mượn sách
+        </caption>
         <thead>
-            <tr>
+            <tr class="table-dark">
                 <th scope="col">Họ tên</th>
                 <th scope="col">Ngày mượn</th>
                 <th scope="col">Hạn trả</th>
