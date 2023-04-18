@@ -63,7 +63,7 @@
 
                     <li class="nav-item py-3" role="presentation">
                         <button class="btn border-dark ">
-                            <a class="nav-link text-dark" data-mdb-toggle="pill" href="index.php?act=ds_docgia" role="tab">Quản lý Đọc Giả</a>
+                            <a class="nav-link text-dark" data-mdb-toggle="pill" href="index.php?act=ds_docgia" role="tab">Quản lý Độc Giả</a>
                         </button>
                     </li>
                 </ul>

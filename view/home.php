@@ -54,7 +54,7 @@
                                         <form action="index.php?act=home&NS=' . $ns . '" method="post">
                                         <input type="hidden" name="ns" value =' . $ns . '>
                                         <input type="hidden" name="SL" value =' . $sl . '>
-                                        <input type="submit" name="muon" value="Mượn"></form>
+                                        <input type="submit" name="muon" class="btn btn-success" value="Mượn"></form>
                                 </td>';
                                         }
 
